@@ -2,13 +2,25 @@
     box-sizing: border-box;
 }
 
-body {
+body.index {
     margin: 0;
     min-height: 100vh;
-    background-color: #dff3ff; /* Нежно-голубой фон */
+    background-color: #dff3ff;
+    /* Нежно-голубой фон */
     font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
     color: #243b53;
     text-align: center;
+    padding: 40px 20px;
+}
+
+body.gifts {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #dff3ff;
+    /* Нежно-голубой фон */
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    color: #243b53;
+    text-align: left;
     padding: 40px 20px;
 }
 
@@ -20,16 +32,13 @@ body {
 h1 {
     font-size: 36px;
     margin-bottom: 18px;
+    text-align: center;
 }
 
 .bio {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 28px;
-}
-
-.likes {
-    margin-bottom: 36px;
 }
 
 .likes-title {
@@ -45,48 +54,44 @@ h1 {
     line-height: 1.8;
 }
 
-/* Нежно-розовая 3D-кнопка с мягкой тенью и бликом слева вверху */
-.btn-3d-pink {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    padding: 16px 32px;
-    border-radius: 18px;
+.doubts {
+    font-size: 30px;
+    margin-bottom: 18px;
+    text-align: center;
+    color: #000000;
+  text-decoration: none;
+}
+
+/* CSS */
+.button-62 {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: table;/* Подстраивает ширину под текст, но ведёт себя как блок */
+    margin: 0 auto;/* Ставит кнопку ровно по центру */
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
     text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    color: #5c1f38;
-    background: linear-gradient(145deg, #ffc4dc, #ff9ec7);
-    /* Объёмный нижний край + мягкая тень */
-    box-shadow:
-        0 7px 0 #e076a4,
-        0 14px 24px rgba(177, 82, 124, 0.28);
-    transition: transform 0.14s ease, box-shadow 0.14s ease;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    color: #FFFFFF;
+  text-decoration: none;
 }
 
-/* Блик в левом верхнем углу */
-.btn-3d-pink::before {
-    content: "";
-    position: absolute;
-    top: -12px;
-    left: -18px;
-    width: 90px;
-    height: 42px;
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0) 72%);
-    transform: rotate(-22deg);
-    pointer-events: none;
+.button-62:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
 
-.btn-3d-pink:hover {
-    transform: translateY(-2px);
-    box-shadow:
-        0 9px 0 #e076a4,
-        0 18px 28px rgba(177, 82, 124, 0.34);
-}
-
-.btn-3d-pink:active {
-    transform: translateY(5px);
-    box-shadow:
-        0 2px 0 #e076a4,
-        0 6px 12px rgba(177, 82, 124, 0.22);
+.button-62:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
