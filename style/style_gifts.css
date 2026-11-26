@@ -1,0 +1,80 @@
+body.gifts {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #dff3ff;
+    /* Нежно-голубой фон */
+    font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+    color: #243b53;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.button-beautiful {
+    background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: table;
+    /* Подстраивает ширину под текст, но ведёт себя как блок */
+    margin: 0 auto;
+    /* Ставит кнопку ровно по центру */
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.button-beautiful:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+.button-beautiful:not([disabled]):hover {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}
+
+
+.button-interesting {
+    background: linear-gradient(to bottom right, #7B61FF, #22D3EE);
+    border: 0;
+    border-radius: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2.5;
+    outline: transparent;
+    padding: 0 1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+}
+
+.button-interesting:not([disabled]):focus {
+    box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5),
+        -.125rem -.125rem 1rem rgba(192, 86, 245, 0.5),
+        .125rem .125rem 1rem rgba(34, 211, 238, 0.5);
+}
+
+.button-interesting:not([disabled]):hover {
+    box-shadow:0 0 .25rem rgba(0, 0, 0, 0.5),
+        -.125rem -.125rem 1rem rgba(192, 86, 245, 0.5),
+        .125rem .125rem 1rem rgba(34, 211, 238, 0.5);
+}
